@@ -1,0 +1,15 @@
+{
+  "name": "protractor-headless",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "protractor": "^3.3.0",
+    "visualreview-protractor": "^0.2.0",
+    "request": "^2.72.0",
+    "q": "^1.4.1"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/protractor/bin/webdriver-manager update"
+  },
+  "license": "Apache-2.0"
+}
