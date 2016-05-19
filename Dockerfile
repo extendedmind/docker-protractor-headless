@@ -15,4 +15,7 @@ COPY package.json /protractor/package.json
 RUN npm install .
 RUN npm run webdriver-update
 COPY protractor.sh /protractor/protractor.sh
+# Fix for the issue with Selenium, as described here:
+# https://github.com/SeleniumHQ/docker-selenium/issues/87
+ENV DBUS_SESSION_BUS_ADDRESS=/dev/null
 ENTRYPOINT ["/protractor/protractor.sh"]
